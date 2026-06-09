@@ -2,7 +2,8 @@
 
 **GEOL0069 — Artificial Intelligence for Earth Observation — Final Project**
 
-This project uses free Sentinel-2 satellite imagery and an unsupervised K-means classifier to measure how much surface-water area **Lake Daihai**, a shrinking endorheic lake on the Inner Mongolian Plateau in northern China, lost between **2018 and 2024** — and validates that measurement against independently published figures.
+This project uses free Sentinel-2 satellite imagery and an unsupervised K-means classifier to measure how much surface-water area **Lake Daihai**, a shrinking endorheic lake on the Inner Mongolian Plateau in northern China, lost between **2018 and 2024** — and validates that measurement against independently published figures.<img width="685" height="380" alt="524163_1_En_1_Fig7_HTML" src="https://github.com/user-attachments/assets/e4bde702-556c-47c5-ac53-7ca2e90b71c0" />
+
 
 ---
 
@@ -12,11 +13,14 @@ Lakes across arid and semi-arid northern China have been contracting for decades
 
 A shrinking closed-basin lake is an ideal target for satellite monitoring. The change is large and unambiguous, and **water is the most spectrally distinct surface in the optical domain** — it absorbs strongly in the near-infrared, so water indices (NDWI, MNDWI) separate water from land almost bimodally. That separability is exactly the condition under which *unsupervised* classification works well, letting us avoid hand-labelling any training data.
 
-**Research question:** *How much surface-water area did Lake Daihai lose between 2018 and 2024, as measured by unsupervised classification of Sentinel-2 imagery, and is that estimate consistent with the published record of the lake's decline?*
+**Research question:** *How much surface-water area did Lake Daihai lose between 2018 and 2024, as measured by unsupervised classification of Sentinel-2 imagery, and is that estimate consistent with the published record of the lake's decline?*<img width="1200" height="683" alt="12665_2022_10526_Fig1_HTML" src="https://github.com/user-attachments/assets/8319380b-6eec-4138-bd3b-b45e46897b0d" />
+
 
 ---
 
 ## 2. Method
+<img width="1400" height="933" alt="1*igBfOi1IFWA_H3aNZG0bzQ" src="https://github.com/user-attachments/assets/bb2c8c50-42ec-42c6-8446-8132afa69edb" />
+
 
 | Stage | What happens |
 |-------|--------------|
@@ -29,7 +33,8 @@ A shrinking closed-basin lake is an ideal target for satellite monitoring. The c
 
 **Why K-means / unsupervised:** no ground-truth labels are needed, the method is fast and runs on a free CPU, and the strong spectral separability of water makes a small-*k* clustering reliable. Fitting once on 2018 and reusing the model on 2024 prevents model drift from contaminating the change signal.
 
-### Figures
+### Figures<img width="320" height="320" alt="Geographical-location-of-Daihai-Lake-and-Daihai-watershed-the-map-was-prepared-in-ArcGIS_Q320" src="https://github.com/user-attachments/assets/7288a0c2-e19e-4a7c-b285-a80d512d01c4" />
+
 - `figures/study_area.png` / NDWI composite — **remote-sensing figure**: shows the lake and the water-index contrast the method exploits.
 - `figures/kmeans_feature_space.png` — **AI-algorithm figure**: sampled pixels in NDWI–MNDWI space, coloured by K-means cluster, with centres marked; the water cluster sits clearly apart.
 - `figures/change_map.png` — 2018 water, 2024 water, and per-pixel change (retained / lost / gained).
@@ -49,6 +54,9 @@ A shrinking closed-basin lake is an ideal target for satellite monitoring. The c
 **Validation.** The 2018 K-means estimate of `__` km² compares with the published ~52 km² (Sun et al., 2022), a difference of `__`%. Agreement at this level indicates the pipeline is measuring the real lake rather than a clustering artefact.
 
 The change map shows loss concentrated as a band around the former shoreline — the spatial signature of a contracting closed-basin lake, not random noise.
+<img width="1589" height="473" alt="Lake Daihai surface-water change(K-means, Sentinel-2)" src="https://github.com/user-attachments/assets/ddd3743e-aed5-4926-bba3-eec887f57519" />
+<img width="690" height="590" alt="Lake Daihai pixels in water-index feature space(2018) K-means clusters" src="https://github.com/user-attachments/assets/07f872f5-1bd0-4df6-8d27-183128ac6a25" />
+<img width="489" height="490" alt="Lake Daihai area, 2018 vs 2024" src="https://github.com/user-attachments/assets/ea94edc1-c431-4b75-b674-b4134283b6c5" />
 
 ---
 
@@ -107,3 +115,13 @@ To run locally instead: `pip install -r requirements.txt`, then run the notebook
 - Gorelick, N. et al. (2017). Google Earth Engine: Planetary-scale geospatial analysis for everyone. *Remote Sensing of Environment*, 202, 18–27.
 
 *Methodological structure adapted from the GEOL0069 in-class Borneo deforestation K-means notebook, re-pointed from vegetation indices to water indices.*
+
+
+---
+
+## Contact
+
+Author: Yuning Liu
+Department of Earth Sciences, University College London
+peko.liu.22@ucl.ac.uk
+Project link:
