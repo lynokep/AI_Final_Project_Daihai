@@ -3,6 +3,8 @@
 **GEOL0069 — Artificial Intelligence for Earth Observation — Final Project**
 
 This project uses free Sentinel-2 satellite imagery and an unsupervised K-means classifier to measure how much surface-water area **Lake Daihai**, a shrinking endorheic lake on the Inner Mongolian Plateau in northern China, lost between **2018 and 2024** — and validates that measurement against independently published figures.
+
+
 <img width="685" height="380" alt="524163_1_En_1_Fig7_HTML" src="https://github.com/user-attachments/assets/e4bde702-556c-47c5-ac53-7ca2e90b71c0" />
 
 
@@ -15,6 +17,8 @@ Lakes across arid and semi-arid northern China have been contracting for decades
 A shrinking closed-basin lake is an ideal target for satellite monitoring. The change is large and unambiguous, and **water is the most spectrally distinct surface in the optical domain** — it absorbs strongly in the near-infrared, so water indices (NDWI, MNDWI) separate water from land almost bimodally. That separability is exactly the condition under which *unsupervised* classification works well, letting us avoid hand-labelling any training data.
 
 **Research question:** *How much surface-water area did Lake Daihai lose between 2018 and 2024, as measured by unsupervised classification of Sentinel-2 imagery, and is that estimate consistent with the published record of the lake's decline?*
+
+
 <img width="1200" height="683" alt="12665_2022_10526_Fig1_HTML" src="https://github.com/user-attachments/assets/8319380b-6eec-4138-bd3b-b45e46897b0d" />
 
 
