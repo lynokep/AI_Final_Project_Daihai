@@ -132,4 +132,4 @@ To run locally instead: `pip install -r requirements.txt`, then run the notebook
 Author: Yuning Liu
 Department of Earth Sciences, University College London
 peko.liu.22@ucl.ac.uk
-Project link:
+Project link: https://github.com/lynokep/AI_Final_Project_Daihai
