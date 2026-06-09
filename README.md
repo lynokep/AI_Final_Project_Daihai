@@ -26,8 +26,6 @@ A shrinking closed-basin lake is an ideal target for satellite monitoring. The c
 
 ## 2. Method
 
-<img width="1400" height="933" alt="1*igBfOi1IFWA_H3aNZG0bzQ" src="https://github.com/user-attachments/assets/bb2c8c50-42ec-42c6-8446-8132afa69edb" />
-
 
 | Stage | What happens |
 |-------|--------------|
@@ -46,6 +44,8 @@ A shrinking closed-basin lake is an ideal target for satellite monitoring. The c
 - `figures/kmeans_feature_space.png` — **AI-algorithm figure**: sampled pixels in NDWI–MNDWI space, coloured by K-means cluster, with centres marked; the water cluster sits clearly apart.
 - `figures/change_map.png` — 2018 water, 2024 water, and per-pixel change (retained / lost / gained).
 
+
+<img width="1400" height="933" alt="1*igBfOi1IFWA_H3aNZG0bzQ" src="https://github.com/user-attachments/assets/bb2c8c50-42ec-42c6-8446-8132afa69edb" />
 ---
 
 ## 3. Results
